@@ -1,5 +1,53 @@
 // FONT TEXT
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 @font-family: 'Lato', sans-serif;
-@rem:10px;
-@font-size: 1.4 * @rem;
+@font-family-monospace: monospace;
+@unit:8px;
+@font-size: 1.8 * @unit;
 @line-height:1.3em;
+@margin-bottom: @font-size;
+@border-radius:4px;
+
+// COLOR
+@color:#444;
+@color-light:#EEE;
+@color-grey:#DDD;
+@color-light-grey:#EEE;
+@color-dark:#111;
+@color-primary:#29F;
+@color-secondary:@color-grey;
+//
+@color-a:@color-primary;
+@color-a-hover:darken(@color-primary, 15%);
+@color-border:@color-grey;
+@color-mark:yellow;
+
+
+
+
+// TABLE
+@background-color-table-thead:@color-light-grey;
+@color-border-table:@color-grey;
+@background-color-table-stripped-tr: fade(@color-primary, 8%);
+@background-color-table-tr-hover: fade(@color-primary, 20%);
+@padding-table: @unit 1.4 * @unit;
+@padding-table-wide: 4 * @unit 2 * @unit;
+
+// FORM
+@padding-input:0.5em;
+@line-height-input: 2em;
+@border-width-input: 1px;
+@border-color-input: @color-border;
+@border-radius-input:0;
+@border-color-input-focus:@color-primary;
+
+// BUTTONS
+@line-height-btn:@line-height-input;
+@padding-btn:1em;
+@border-width-btn:1px;
+
+
+// Media Queries
+@screen-lg:991px;
+@screen-md:990px;
+@screen-sm:640px;

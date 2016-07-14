@@ -1,0 +1,112 @@
+// HELPERS ******************/
+// Text
+.font-weight-light,
+.light {
+  .f-weight-light;
+}
+.font-weight-normal {
+  .f-weight-normal;
+}
+.font-weight-bold,
+.bold{
+  .f-weight-bold;
+}
+.align-left{
+  .f-align-left;
+}
+.align-right{
+  .f-align-right;
+}
+.align-center{
+  .f-align-center;
+}
+.align-justify{
+	.f-align-justify;
+}
+.font-style-normal {
+  font-style: normal;
+}
+.font-style-italic,
+.italic {
+  font-style: italic;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-underline,
+.underline {
+  text-decoration: underline;
+}
+.text-decoration-overline,
+.overline {
+  text-decoration: overline;
+}
+.text-decoration-line-through,
+.line-through {
+  text-decoration: line-through;
+}
+.text-transform-none {
+  text-transform: none;
+}
+.text-transform-capitalize,
+.capitalize {
+  text-transform: capitalize;
+}
+.text-transform-uppercase,
+.uppercase {
+  text-transform: uppercase;
+}
+.text-transform-lowercase,
+.lowercase {
+  text-transform: lowercase;
+}
+.vertical-align-baseline,
+.baseline {
+  vertical-align: baseline;
+}
+.vertical-align-sub,
+.sub {
+  vertical-align: sub;
+}
+.vertical-align-super,
+.super,
+.sup {
+  vertical-align: super;
+}
+.vertical-align-top {
+  vertical-align: top;
+}
+.vertical-align-middle {
+  vertical-align: top;
+}
+.vertical-align-bottom {
+  vertical-align: top;
+}
+/* Helper Media Queries */
+/* Desktop devices (991px more) */
+@media (min-width: @screen-md + 1) {
+	.hide-lg,
+	.show-md{
+		display: none;
+	}
+}
+/* Medium devices (990px) */
+@media (max-width: @screen-md) {
+	.hide-md,
+	.show-lg{
+		display: none;
+	}
+}
+/* Medium devices (640px + 1) */
+@media (min-width: @screen-sm + 1) {
+	.show-sm{
+		display: none;
+	}
+}
+/* Small devices (640px) */
+@media (max-width: @screen-sm) {
+	.hide-sm,
+	.show-md{
+		display: none;
+	}
+}

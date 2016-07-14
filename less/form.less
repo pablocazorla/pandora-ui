@@ -1,0 +1,162 @@
+// FORM INPUTS ******************/
+fieldset, .fieldset, .input-set {
+  margin-bottom: @margin-bottom;
+  .input-set:last-child {
+    margin-bottom: 0;
+  }
+}
+legend {
+  font-size: 2.2 * @unit;
+  display: block;
+  line-height: @line-height;
+  margin-bottom: @margin-bottom;
+  padding-top: @margin-bottom;
+}
+label {
+  font-size: 90%;
+  opacity: 0.8;
+  vertical-align: middle;
+  margin: .2 * @margin-bottom 0;
+  display: inline-block;
+}
+.input, input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=tel], input[type=date], input[type=time], input[type=week], input[type=month], input[type=datetime], input[type=datetime-local], input[type=number], input[type=color], input[type=file], output, textarea, select {
+  font-size: @font-size;
+  padding: 0 @padding-input;
+  line-height: @line-height-input;
+  border: solid @border-width-input @border-color-input;
+  vertical-align: middle;
+  display: block;
+  border-radius: @border-radius-input;
+  .f-box-sizing-border();
+  .transition(border-color .2s);
+  outline:none;
+  box-shadow: none;
+  &:focus, &.focus {
+    border-color: @border-color-input-focus;
+  }
+  &:-moz-focus-inner{
+  	border:0;
+  }
+  &:active{
+  	outline: none;
+  }
+}
+.input, input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], textarea {
+  width: 100%;
+}
+input[type=tel], input[type=date], input[type=time], input[type=week], input[type=month], input[type=datetime], input[type=datetime-local], input[type=range], select {
+  width: auto;
+  min-width: 20 * @unit;
+  max-width: 100%;
+}
+input[type=number], output {
+  width: auto;
+  min-width: 2 * @unit;
+  max-width: auto;
+}
+textarea {
+  font-family: @font-family;
+  min-height: 6em;
+  resize: vertical;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: @line-height-input;
+  .f-box-sizing-content();
+  text-align: center;
+  padding-right: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='16'><path d='m 0,0 5,5 5,-5 z' style='fill:grey'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+option{
+	padding: 0;
+	text-align: center;
+}
+input[type=color]{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: transparent;
+  background-image:none;
+}
+input[type=file]{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+}
+input[type=reset],
+input[type=submit],
+input[type=button],
+input[type=image],
+button{
+	.btn;
+	border-color: transparent;
+}
+input[type=range]{
+  	display: block;
+  	margin: 0;
+}
+
+input[type=radio],
+input[type=checkbox]{
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 0 0.5em 0 0;
+
+	& + label{
+		cursor: pointer;
+	}
+}
+.input-radio,
+.input-checkbox{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 2 * @unit;
+	height: 2 * @unit;
+	border: solid @border-width-input @border-color-input;
+	margin-right: .2 * @margin-bottom;
+	overflow: hidden;
+	background-color: @color-primary;
+	box-shadow: 0 0 0 2px #FFF inset;
+	border-radius: @border-radius-input;
+	& input{
+		border:1px solid #FFF;
+		background-color: #FFF;
+		margin: 0;padding:0;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+		position: absolute;
+		top: -1 * @unit;
+		left: -1 * @unit;
+		width: 4 * @unit;
+		height: 4 * @unit;
+		&:checked{
+			opacity: 0;
+		}
+	}
+	& + label{
+		cursor: pointer;
+	}
+}
+.input-radio{
+	box-shadow: 0 0 0 3px #FFF inset;
+	border-radius:52%;
+}
+output{
+	min-height: @line-height-input;
+}
+input,output{
+	&.inline,
+	&.inline-block{
+		display: inline-block;
+	}
+}

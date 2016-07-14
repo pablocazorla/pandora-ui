@@ -1,0 +1,43 @@
+// IMAGE ******************/
+img{
+	max-width: 100%;
+	&.rounded{
+		display: inline-block;
+		border-radius: @border-radius;
+		&.responsive{
+			display: block;
+		}
+	}
+	&.circular{
+		display: inline-block;
+		border-radius: 52%;
+		&.responsive{
+			display: block;
+		}
+	}
+}
+.responsive{
+	&,
+	& img{
+		display: block;
+		max-width: 100%;
+		width: auto !important;
+		height: auto !important;
+	}
+}
+.caption{
+	display: block;
+	text-align: center;
+	font-size: 84%;
+	line-height: 1.2em;
+	padding: .2em 0;
+	margin-bottom: @margin-bottom;
+
+	&.over-image{
+		color: @color-light;
+		background-color: fade(@color-dark,70%);
+		position: relative;
+		top:-1.6em;
+		margin-bottom: -1.6em;
+	}
+}
