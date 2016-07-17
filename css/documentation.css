@@ -98,6 +98,9 @@ hr {
   margin-bottom: 20px;
   overflow: hidden;
 }
+.bg-color-dark{
+  background-color: #333;
+}
 // .parallax-example {
 //   color: #FFF;
 //   padding: 200px 20px;

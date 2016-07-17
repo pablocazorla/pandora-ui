@@ -17,6 +17,13 @@
         array('title' => 'Tags', 'url' => 'tags')
       ]
     ),
+    array( 'title' => 'Layout',
+      'items' => [
+        array('title' => 'Grid', 'url' => 'grid'),
+        array('title' => 'Flex', 'url' => 'flex'),
+        array('title' => 'Layout helpers', 'url' => 'layout-helpers')
+      ]
+    ),
     array( 'title' => 'Groups',
       'items' => [
         array('title' => 'What is a <i>group</i>', 'url' => 'group'),
@@ -34,13 +41,7 @@
         array('title' => 'Popups', 'url' => 'popups')
       ]
     ),
-    array( 'title' => 'Layout',
-      'items' => [
-        array('title' => 'Grid', 'url' => 'grid'),
-        array('title' => 'Flex', 'url' => 'flex'),
-        array('title' => 'Layout helpers', 'url' => 'layout-helpers')
-      ]
-    ),
+    
    
     array( 'title' => 'Navigation',
       'items' => [

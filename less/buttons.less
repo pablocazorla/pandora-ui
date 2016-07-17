@@ -1,0 +1,76 @@
+// BUTTONS ******************/
+
+
+
+.btn{
+  .f-btn;
+
+  // Variants
+  &.btn-primary{
+    .btn-variant(@color-primary);
+  }
+  &.btn-secondary{
+    .btn-variant(@color-secondary);
+  }
+  &.btn-grey{
+    .btn-variant(darken(@color-grey,15%));
+  }
+  &.btn-dark{
+    .btn-variant(@color-dark);
+  }
+  &.btn-danger{
+    .btn-variant(@color-danger);
+  }
+  &.btn-warning{
+    .btn-variant(@color-warning);
+  }
+  &.btn-success{
+    .btn-variant(@color-success);
+  }
+  &.btn-info{
+    .btn-variant(@color-info);
+  }
+  
+  // Shapes
+  &.rounded{
+    border-radius:@border-radius;
+  }
+  &.pill{
+    border-radius: @line-height-btn / 1.8;
+  }
+  &.circular{
+    width: @line-height-btn * 1.05;
+    border-radius: 52%;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  &.square{
+    border-radius:0;
+  }
+  &.btn-3d{
+    border:none;
+    box-shadow: 0 0.2em 0.2em rgba(255, 255, 255, 0.9) inset, 0 -0.2em 0.2em rgba(0, 0, 0, 0.3) inset, 0 2px 2px rgba(0, 0, 0, 0.2);    
+  }
+}
+
+// button shape wrappers
+.rounded-buttons{
+  .btn:not(.square):not(.pill):not(.circular){
+    border-radius:@border-radius;
+  }
+}
+.pill-buttons{
+  .btn:not(.square):not(.rounded):not(.circular){
+    border-radius: @line-height-btn / 1.8;
+  }
+}
+.circular-buttons{
+  .btn:not(.square):not(.rounded):not(.pill){
+    width: @line-height-btn * 1.05;
+    border-radius: 52%;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+}

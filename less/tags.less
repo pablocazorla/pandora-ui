@@ -1,0 +1,38 @@
+// TAGS ******************/
+.tag {
+  .f-tag;
+  // Variants
+  &.tag-primary {
+    .tag-variant(@color-primary);
+  }
+  &.tag-secondary {
+    .tag-variant(@color-secondary);
+  }
+  &.tag-grey {
+    .tag-variant(darken(@color-grey, 15%));
+  }
+  &.tag-dark {
+    .tag-variant(@color-dark);
+  }
+  &.tag-danger {
+    .tag-variant(@color-danger);
+  }
+  &.tag-warning {
+    .tag-variant(@color-warning);
+  }
+  &.tag-success {
+    .tag-variant(@color-success);
+  }
+  &.tag-info {
+    .tag-variant(@color-info);
+  }
+  &.small {
+    font-size: 0.65 * @font-size-tag;
+  }
+  &.big {
+    font-size: 1.75 * @font-size-tag;
+  }
+  &.biggest {
+    font-size: 2.5 * @font-size-tag;
+  }
+}
